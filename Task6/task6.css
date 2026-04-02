@@ -1,0 +1,33 @@
+/* body */
+body {
+  font-family: Arial;
+  background-color: azure;
+}
+
+/* list */
+#list {
+  width: 200px;
+  margin: 150px auto;
+}
+
+/* list items */
+li {
+  list-style: none;
+  padding: 15px;
+  text-align: center;
+  margin: 5px 0;
+  background: rgb(160, 240, 153);
+  cursor: grab;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* dragging item */
+li.dragging {
+  opacity: 0.5;
+}
+
+/* drag over effect */
+li.over {
+  border: 2px dashed #000;
+}

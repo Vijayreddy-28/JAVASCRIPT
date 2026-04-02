@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .card {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
+}

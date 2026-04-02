@@ -1,0 +1,48 @@
+[
+  {
+    "question": "What is the capital of India?",
+    "answers": [
+      { "text": "New Delhi", "correct": true },
+      { "text": "Mumbai", "correct": false },
+      { "text": "Chennai", "correct": false },
+      { "text": "Bangalore", "correct": false }
+    ]
+  },
+  {
+    "question": "Which language is used for web styling?",
+    "answers": [
+      { "text": "HTML", "correct": false },
+      { "text": "Python", "correct": false },
+      { "text": "C++", "correct": false },
+      { "text": "CSS", "correct": true }
+    ]
+  },
+  {
+    "question": "Which company developed JavaScript?",
+    "answers": [
+      { "text": "Google", "correct": false },
+      { "text": "Apple", "correct": false },
+      { "text": "Netscape", "correct": true },
+      { "text": "IBM", "correct": false }
+    ]
+  },
+  {
+    "question": "What does HTML stand for?",
+    "answers": [
+      { "text": "HighText Machine Language", "correct": false },
+      { "text": "HyperText Markup Language", "correct": true },
+      { "text": "Home Tool Markup Language", "correct": false },
+      { "text": "Hyper Tool Multi Language", "correct": false }
+    ]
+  },
+  {
+    "question": "Which keyword is used to declare a variable in JavaScript?",
+    "answers": [
+      { "text": "let", "correct": true },
+      { "text": "int", "correct": false },
+      { "text": "varName", "correct": false },
+      { "text": "define", "correct": false },
+      { "text": "constValue", "correct": false }
+    ]
+  }
+]

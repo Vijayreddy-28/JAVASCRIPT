@@ -1,0 +1,111 @@
+/* Reset default spacing and sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set font for page */
+body {
+  font-family: "Inter", "Roboto", "Open Sans", sans-serif;
+}
+
+/* Main container styling */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgb(181, 233, 238), rgb(122, 202, 122));
+  padding: 10px;
+}
+
+/* ToDo app box styling */
+.todo-app {
+  background-color: aliceblue;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin: 100px auto 10px;
+  padding: 40px 30px 70px;
+}
+
+/* Heading style */
+.todo-app h2 {
+  color: rgb(10, 139, 44);
+  margin-bottom: 20px;
+}
+
+/* Input row styling */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+/* Text input styling */
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+}
+
+/* Add button styling */
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background-color: rgb(169, 239, 169);
+  cursor: pointer;
+  border-radius: 40px;
+  font-size: 16px;
+}
+
+/* Task item styling */
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Circle before task */
+ul li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-image: url(images/unchecked.jpeg);
+  background-size: cover;
+  background-position: center;
+  left: 10px;
+  bottom: 10px;
+}
+
+/* Completed task style */
+ul li.checked {
+  text-decoration: line-through;
+}
+
+/* Checked circle style */
+ul li.checked::before {
+  background-image: url(images/tik.png);
+}
+
+/* Span styling (e.g., delete icon) */
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  line-height: 40px;
+}

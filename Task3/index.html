@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lightbox Gallery</title>
+    <link rel="stylesheet" href="task3.css" />
+  </head>
+  <body>
+    <!-- heading -->
+    <h2>Image Gallery</h2>
+
+    <!-- gallery -->
+    <div class="gallery">
+      <img src="images/1.avif" class="thumb" />
+      <img src="images/2.avif" class="thumb" />
+      <img src="images/3.avif" class="thumb" />
+      <img src="images/4.avif" class="thumb" />
+      <img src="images/5.avif" class="thumb" />
+      <img src="images/6.avif" class="thumb" />
+      <img src="images/7.avif" class="thumb" />
+      <img src="images/8.avif" class="thumb" />
+      <img src="images/9.avif" class="thumb" />
+      <img src="images/10.avif" class="thumb" />
+      <img src="images/11.avif" class="thumb" />
+      <img src="images/12.avif" class="thumb" />
+    </div>
+
+    <!-- lightbox -->
+    <div class="lightbox" id="lightbox">
+      <!-- close -->
+      <span class="close">&times;</span>
+
+      <!-- prev -->
+      <span class="prev">&#10094;</span>
+
+      <!-- image -->
+      <img id="lightbox-img" />
+
+      <!-- next -->
+      <span class="next">&#10095;</span>
+    </div>
+
+    <!-- script -->
+    <script src="task3.js"></script>
+  </body>
+</html>

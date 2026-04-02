@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Calculater</title>
+    <link href="task2.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- container -->
+    <div class="container">
+      <!-- calculator -->
+      <div class="calculator">
+        <form>
+          <!-- display -->
+          <div class="display">
+            <input type="text" name="display" />
+          </div>
+
+          <!-- buttons row -->
+          <div>
+            <input type="button" value="AC" onclick="clearAll()" />
+            <input type="button" value="DE" onclick="deleteLast()" />
+            <input type="button" value="." onclick="append('.')" />
+            <input type="button" value="/" onclick="append('/')" />
+          </div>
+
+          <!-- buttons row -->
+          <div>
+            <input type="button" value="7" onclick="append('7')" />
+            <input type="button" value="8" onclick="append('8')" />
+            <input type="button" value="9" onclick="append('9')" />
+            <input type="button" value="*" onclick="append('*')" />
+          </div>
+
+          <!-- buttons row -->
+          <div>
+            <input type="button" value="4" onclick="append('4')" />
+            <input type="button" value="5" onclick="append('5')" />
+            <input type="button" value="6" onclick="append('6')" />
+            <input type="button" value="-" onclick="append('-')" />
+          </div>
+
+          <!-- buttons row -->
+          <div>
+            <input type="button" value="1" onclick="append('1')" />
+            <input type="button" value="2" onclick="append('2')" />
+            <input type="button" value="3" onclick="append('3')" />
+            <input type="button" value="+" onclick="append('+')" />
+          </div>
+
+          <!-- buttons row -->
+          <div>
+            <input type="button" value="00" onclick="append('00')" />
+            <input type="button" value="0" onclick="append('0')" />
+
+            <!-- equal -->
+            <input
+              type="button"
+              value="="
+              class="equal"
+              onclick="Calculate()"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="task2.js"></script>
+  </body>
+</html>

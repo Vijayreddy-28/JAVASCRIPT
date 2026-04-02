@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link href="task4.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- main card -->
+    <div class="card">
+      <!-- search box -->
+      <div class="search">
+        <input type="text" placeholder="Enter City name" spellcheck="false" />
+        <button><img src="images/search.png" /></button>
+      </div>
+
+      <!-- error message -->
+      <div class="error">
+        <p>Invalid city name</p>
+      </div>
+
+      <!-- weather info -->
+      <div class="weather">
+        <img src="images/rain.png" class="weather-icon" />
+        <h1 class="temp">22°C</h1>
+        <h2 class="city">New York</h2>
+
+        <!-- details -->
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png" />
+            <div>
+              <p class="humidity">50%</p>
+              <p>humidity</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <img src="images/wind.png" />
+            <div>
+              <p class="wind">15 km/hr</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="task4.js"></script>
+  </body>
+</html>
