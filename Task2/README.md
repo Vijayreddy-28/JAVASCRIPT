@@ -22,3 +22,9 @@ Build a basic calculator that performs arithmetic operations like addition, subt
 
 #### 4
 ![output](output/4.png)
+
+#### 5
+![output](output/5.png)
+
+#### 6
+![output](output/6.png)
