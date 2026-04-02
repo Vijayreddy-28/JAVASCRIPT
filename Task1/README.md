@@ -17,7 +17,7 @@ Create a simple to-do list app where users can add new tasks, mark them as compl
 ![Output](output/2.png)
 
 #### 3
-![Output](output/3.png)
+![Output](output/6.png)
 
 #### 4
 ![Output](output/3.png)
