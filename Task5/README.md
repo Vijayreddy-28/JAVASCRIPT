@@ -21,6 +21,3 @@ Build a quiz app that dynamically loads questions and tracks user scores.
 
 #### 4
 ![output](output/4.png)
-
-#### 5
-![output](output/5.png)
