@@ -21,3 +21,6 @@ Create a weather app that fetches and displays weather information based on a ci
 
 #### 4
 ![output](output/4.png)
+
+#### 5
+![output](output/5.png)
