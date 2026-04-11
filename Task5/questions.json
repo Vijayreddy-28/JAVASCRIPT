@@ -2,47 +2,115 @@
   {
     "question": "What is the capital of India?",
     "answers": [
-      { "text": "New Delhi", "correct": true },
-      { "text": "Mumbai", "correct": false },
-      { "text": "Chennai", "correct": false },
-      { "text": "Bangalore", "correct": false }
+      { "text": "New Delhi", "correct": true, "explanation": "" },
+      {
+        "text": "Mumbai",
+        "correct": false,
+        "explanation": "Mumbai is a major city, but the capital of India is New Delhi."
+      },
+      {
+        "text": "Chennai",
+        "correct": false,
+        "explanation": "Chennai is the capital of Tamil Nadu, not India."
+      },
+      {
+        "text": "Bangalore",
+        "correct": false,
+        "explanation": "Bangalore is the capital of Karnataka, not India."
+      }
     ]
   },
   {
     "question": "Which language is used for web styling?",
     "answers": [
-      { "text": "HTML", "correct": false },
-      { "text": "Python", "correct": false },
-      { "text": "C++", "correct": false },
-      { "text": "CSS", "correct": true }
+      {
+        "text": "HTML",
+        "correct": false,
+        "explanation": "HTML is for structure, not styling websites."
+      },
+      {
+        "text": "Python",
+        "correct": false,
+        "explanation": "Python is a programming language, not for web styling."
+      },
+      {
+        "text": "C++",
+        "correct": false,
+        "explanation": "C++ is a general-purpose language, not used for styling web pages."
+      },
+      { "text": "CSS", "correct": true, "explanation": "" }
     ]
   },
   {
     "question": "Which company developed JavaScript?",
     "answers": [
-      { "text": "Google", "correct": false },
-      { "text": "Apple", "correct": false },
-      { "text": "Netscape", "correct": true },
-      { "text": "IBM", "correct": false }
+      {
+        "text": "Google",
+        "correct": false,
+        "explanation": "Google did not develop JavaScript; they developed V8 engine for Chrome."
+      },
+      {
+        "text": "Apple",
+        "correct": false,
+        "explanation": "Apple did not develop JavaScript."
+      },
+      { "text": "Netscape", "correct": true, "explanation": "" },
+      {
+        "text": "IBM",
+        "correct": false,
+        "explanation": "IBM did not develop JavaScript."
+      }
     ]
   },
   {
     "question": "What does HTML stand for?",
     "answers": [
-      { "text": "HighText Machine Language", "correct": false },
-      { "text": "HyperText Markup Language", "correct": true },
-      { "text": "Home Tool Markup Language", "correct": false },
-      { "text": "Hyper Tool Multi Language", "correct": false }
+      {
+        "text": "HighText Machine Language",
+        "correct": false,
+        "explanation": "Incorrect. HTML stands for HyperText Markup Language."
+      },
+      {
+        "text": "HyperText Markup Language",
+        "correct": true,
+        "explanation": ""
+      },
+      {
+        "text": "Home Tool Markup Language",
+        "correct": false,
+        "explanation": "Incorrect. This is not what HTML stands for."
+      },
+      {
+        "text": "Hyper Tool Multi Language",
+        "correct": false,
+        "explanation": "Incorrect. HTML stands for HyperText Markup Language."
+      }
     ]
   },
   {
     "question": "Which keyword is used to declare a variable in JavaScript?",
     "answers": [
-      { "text": "let", "correct": true },
-      { "text": "int", "correct": false },
-      { "text": "varName", "correct": false },
-      { "text": "define", "correct": false },
-      { "text": "constValue", "correct": false }
+      { "text": "let", "correct": true, "explanation": "" },
+      {
+        "text": "int",
+        "correct": false,
+        "explanation": "int is used in languages like C/C++, not JavaScript."
+      },
+      {
+        "text": "varName",
+        "correct": false,
+        "explanation": "varName is not a keyword in JavaScript."
+      },
+      {
+        "text": "define",
+        "correct": false,
+        "explanation": "define is not a JavaScript keyword."
+      },
+      {
+        "text": "constValue",
+        "correct": false,
+        "explanation": "constValue is not a JavaScript keyword."
+      }
     ]
   }
 ]

@@ -11,6 +11,7 @@ fetch("questions.json")
 const questionbtn = document.getElementById("question");
 const answerbutton = document.getElementById("answer-buttons");
 const nextbtn = document.getElementById("next-btn");
+const feedback = document.getElementById("feedback");
 
 let currQuestionIndex = 0;
 let score = 0;
@@ -48,6 +49,7 @@ function showQuestion() {
 // reset state
 function resetState() {
   nextbtn.style.display = "none";
+  feedback.innerHTML = "";
   answerbutton.innerHTML = "";
 }
 
@@ -56,11 +58,21 @@ function selectAnswer(e) {
   const selectedbtn = e.target;
   const isCorrect = selectedbtn.dataset.correct == "true";
 
+  // Find the selected answer object
+  const currQuestion = questions[currQuestionIndex];
+  const selectedAnswerObj = currQuestion.answers.find(
+    (a) => a.text === selectedbtn.innerHTML,
+  );
+
   if (isCorrect) {
     selectedbtn.classList.add("correct");
     score++;
+    feedback.innerHTML = "Correct! 🎉";
+    feedback.style.color = "green"; // NEW
   } else {
     selectedbtn.classList.add("incorrect");
+    feedback.innerHTML = selectedAnswerObj.explanation || "Wrong answer!";
+    feedback.style.color = "red"; // NEW
   }
 
   Array.from(answerbutton.children).forEach((button) => {
@@ -72,7 +84,6 @@ function selectAnswer(e) {
 
   nextbtn.style.display = "block";
 }
-
 // next question
 function handleNextButton() {
   currQuestionIndex++;
