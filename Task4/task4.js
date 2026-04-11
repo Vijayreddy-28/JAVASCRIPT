@@ -1,14 +1,13 @@
-const apiKey = "a51e68e072305b04515b3e310f3f6248";
-const apiUrl =
-  "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
-
+import { WEATHER_API_KEY, WEATHER_API_URL } from "./config.js";
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
 
 // fetch weather data
 async function checkWeather(city) {
-  const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+  const response = await fetch(
+    WEATHER_API_URL + city + `&appid=${WEATHER_API_KEY}`,
+  );
 
   // show error if city not found
   if (response.status == 404) {
