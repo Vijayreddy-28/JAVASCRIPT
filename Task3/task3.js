@@ -18,7 +18,8 @@ thumbnails.forEach((img, index) => {
 
 // show image
 function showImage() {
-  lightboxImg.src = thumbnails[currentIndex].src;
+  const hdSrc = thumbnails[currentIndex].dataset.hd;
+  lightboxImg.src = hdSrc || thumbnails[currentIndex].src;
 }
 
 // next image
