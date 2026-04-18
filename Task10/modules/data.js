@@ -1,0 +1,48 @@
+export const products = [
+  {
+    id: 1,
+    name: "Laptop",
+    price: 1000,
+    discount: 15,
+    img: "images/laptop.jpeg",
+  },
+  { id: 2, name: "Phone", price: 500, discount: 10, img: "images/ipone.avif" },
+  { id: 3, name: "Shoes", price: 150, discount: 25, img: "images/shoe.jpg" },
+  { id: 4, name: "Watch", price: 200, discount: 20, img: "images/watch.jpg" },
+  { id: 5, name: "Bed Lamp", price: 400, discount: 30, img: "images/led.jpg" },
+  {
+    id: 6,
+    name: "Wall Clock",
+    price: 300,
+    discount: 5,
+    img: "images/wall.jpg",
+  },
+  {
+    id: 7,
+    name: "Speaker",
+    price: 250,
+    discount: 18,
+    img: "images/speaker.jpg",
+  },
+  {
+    id: 8,
+    name: "College Bag",
+    price: 100,
+    discount: 12,
+    img: "images/college.jpg",
+  },
+  {
+    id: 9,
+    name: "Coffee Mug",
+    price: 50,
+    discount: 40,
+    img: "images/coffee.avif",
+  },
+  {
+    id: 10,
+    name: "Story Book",
+    price: 20,
+    discount: 8,
+    img: "images/book.jpg",
+  },
+];
