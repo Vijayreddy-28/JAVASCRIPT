@@ -2,12 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eCommerce App</title>
+
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/products.css" />
     <link rel="stylesheet" href="styles/cart.css" />
     <link rel="stylesheet" href="styles/response.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -15,28 +18,68 @@
   </head>
 
   <body>
-    <!-- Header -->
+    <!-- HEADER -->
     <header>
-      <h2>🛍️PrimeCart</h2>
+      <h2>🛍️ PrimeCart</h2>
 
       <div class="search-box">
-        <input id="search" placeholder="Search products..." />
+        <input
+          id="search"
+          type="text"
+          placeholder="Search products..."
+          aria-label="Search products"
+        />
       </div>
-      <!-- Cart Button -->
-      <button id="cart-btn">
+
+      <button id="cart-btn" type="button">
         <i class="fa-solid fa-bag-shopping"></i>
         <span id="cart-count">0</span>
       </button>
     </header>
 
-    <!-- Products -->
-    <div id="products"></div>
+    <!-- FILTER SIDEBAR (LEFT) -->
+    <div class="filter-bar">
+      <!-- SORT -->
+      <div>
+        <h4>Sort</h4>
+        <select id="sort">
+          <option value="">Default</option>
+          <option value="low">Price: Low → High</option>
+          <option value="high">Price: High → Low</option>
+          <option value="name">Name</option>
+        </select>
+      </div>
 
-    <!-- Cart Sidebar -->
+      <!-- PRICE RANGE -->
+      <div class="price-filter">
+        <h4>Price Range</h4>
+
+        <input type="range" id="minRange" min="0" max="1000" value="0" />
+        <input type="range" id="maxRange" min="0" max="1000" value="1000" />
+
+        <p>$<span id="minVal">0</span> - $<span id="maxVal">1000</span></p>
+      </div>
+
+      <!-- DISCOUNT -->
+      <div class="discount-box">
+        <h4>Discount</h4>
+
+        <input type="range" id="discountRange" min="0" max="50" value="0" />
+
+        <p><span id="discountVal">0</span>% & above</p>
+      </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div id="products">
+      <p style="text-align: center">Loading products...</p>
+    </div>
+
+    <!-- CART -->
     <div id="cart">
       <div class="cart-header">
         <h3>Cart</h3>
-        <button id="close-btn">X</button>
+        <button id="close-btn" type="button">X</button>
       </div>
 
       <div id="cart-items"></div>
@@ -48,6 +91,6 @@
       </div>
     </div>
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="./modules/main.js"></script>
   </body>
 </html>

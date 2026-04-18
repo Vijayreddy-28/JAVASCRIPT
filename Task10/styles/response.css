@@ -1,12 +1,55 @@
+/* MOBILE */
 @media (max-width: 768px) {
+  /* Header */
   header {
-    display: flex;
     flex-direction: column;
-    height: fit-content;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
   }
-  .card {
-    display: flex;
-    margin-bottom: 10px;
+
+  .search-box {
+    width: 100%;
+  }
+
+  #cart-btn {
+    align-self: flex-end;
+  }
+
+  /* Filter becomes top section */
+  .filter-bar {
+    position: static;
+    width: 100%;
+    height: auto;
+
     flex-direction: column;
+    gap: 10px;
+
+    margin-top: 120px;
+    border: none;
+  }
+
+  /* Products full width */
+  #products {
+    margin: 0;
+    padding: 10px;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Card */
+  .card {
+    width: 100%;
+  }
+
+  .card img {
+    height: 120px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  #products {
+    grid-template-columns: 1fr;
   }
 }

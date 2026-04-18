@@ -1,19 +1,21 @@
-/* Header */
+/* HEADER */
 header {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
   width: 100%;
-  background-color: rgb(243, 235, 235);
   height: 70px;
-  top: 0;
-  z-index: 100;
-  padding: 0 20px;
+
+  background-color: rgb(243, 235, 235);
+
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
+
+  padding: 0 20px;
 }
 
+/* Search */
 .search-box {
   width: 30%;
   margin: 0 auto;
@@ -28,12 +30,11 @@ header {
 
 /* Cart Button */
 #cart-btn {
-  right: 20px;
-  top: 20px;
   padding: 10px;
   border: none;
   display: flex;
   background-color: rgb(243, 235, 235);
+  cursor: pointer;
 }
 
 i {
@@ -49,4 +50,86 @@ i {
   height: 19px;
   margin-left: -2px;
   margin-bottom: -2px;
+}
+
+/*  FILTER SIDEBAR (LEFT) */
+.filter-bar {
+  position: fixed;
+  top: 70px; /* below header */
+  left: 0;
+  width: 260px;
+  height: calc(100vh - 70px);
+
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background: #f8fafc;
+  border-right: 1px solid #e5e7eb;
+
+  z-index: 99;
+  overflow-y: auto;
+
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Sort */
+.filter-bar select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Price Filter */
+.price-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price-filter input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.price-filter button {
+  padding: 6px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Discount Filter */
+.discount-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.discount-box input {
+  padding: 6px;
+  border: 1px solid #f59e0b;
+  border-radius: 6px;
+  background: #fffbeb;
+}
+
+.discount-box button {
+  padding: 6px;
+  border: none;
+  background: #f59e0b;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* PRODUCTS AREA  */
+#products {
+  margin-top: 10px; 
+  margin-left: 280px; 
+  padding: 20px;
 }
